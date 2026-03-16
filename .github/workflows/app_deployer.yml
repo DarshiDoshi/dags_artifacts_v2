@@ -34,3 +34,6 @@ jobs:
 
     with:
       app_name: my-app-v2
+    secrets:
+      NX1_API_KEY: ${{ secrets.NX1_API_KEY }}
+      NX1_HOST: ${{ secrets.NX1_HOST }}
