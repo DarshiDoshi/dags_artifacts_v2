@@ -1,24 +1,3 @@
-# name: Deploy NX1 App (via Template)
-
-# on:
-#   push:
-#     tags:
-#       - "v*"
-
-#   workflow_dispatch:
-
-# jobs:
-#   deploy:
-#     uses: nexuscognitive/global_ci_template/.github/workflows/app_deployer.yml@feature/nx1_app_deploy
-
-#     with:
-#       app_name: my-app
-#       dags_files: test_dag_1.py,test_dag_2.py
-#       artifacts_files: artifact1.py
-
-#     secrets:
-#       NX1_API_KEY: ${{ secrets.NX1_API_KEY }}
-#       NX1_HOST: ${{ secrets.NX1_HOST }}
 name: Deploy NX1 App (via Template)
 
 on:
@@ -33,7 +12,7 @@ jobs:
     uses: nexuscognitive/global_ci_template/.github/workflows/app_deployer.yml@main
 
     with:
-      app_name: test_app
+      app_name: kf_demo_app
     secrets:
       NX1_API_KEY: ${{ secrets.NX1_API_KEY }}
       NX1_HOST: ${{ secrets.NX1_HOST }}
